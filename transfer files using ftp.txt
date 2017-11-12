@@ -1,0 +1,5 @@
+apt-get install python-pyftpdlib
+
+python -m pyftpdlib -p 21
+
+If you want to grant the anonymous user write access, add the -w flag as well

